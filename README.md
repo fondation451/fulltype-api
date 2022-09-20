@@ -1,1 +1,1 @@
-# typescript-starter
+# fulltype-api

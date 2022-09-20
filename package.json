@@ -1,9 +1,12 @@
 {
   "author": "Nicolas Assouad",
   "bugs": {
-    "url": "https://github.com/fondation451/typescript-starter/issues"
+    "url": "https://github.com/fondation451/fulltype-api/issues"
   },
-  "description": "Starter repository for typescript project",
+  "dependencies": {
+    "fulltype": "^0.0.11"
+  },
+  "description": "API schema tools of fulltype",
   "devDependencies": {
     "@types/jest": "^29.0.3",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
@@ -20,17 +23,17 @@
   "files": [
     "lib/src/**/*"
   ],
-  "homepage": "https://github.com/fondation451/typescript-starter#readme",
+  "homepage": "https://github.com/fondation451/fulltype-api#readme",
   "keywords": [
     "typescript",
     "starter"
   ],
   "license": "MIT",
   "main": "lib/src/index.js",
-  "name": "typescript-starter",
+  "name": "fulltype-api",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fondation451/typescript-starter.git"
+    "url": "git+https://github.com/fondation451/fulltype-api.git"
   },
   "scripts": {
     "build": "tsc",
