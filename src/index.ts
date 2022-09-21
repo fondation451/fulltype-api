@@ -1,8 +1,8 @@
 import * as ft from "fulltype";
 
 export type ApiEndpoint = {
-  input: ft.Schema<any>;
-  output: ft.Schema<any>;
+  input: ft.Schema<{ [param: string]: ft.Schema<any> }>;
+  output: ft.Schema<{ [param: string]: ft.Schema<any> }>;
 };
 
 export const buildApiSchema = <ApiT extends { [routeName: string]: ApiEndpoint }>(

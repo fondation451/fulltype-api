@@ -44,9 +44,9 @@
     "prepare": "yarn build",
     "prepublishOnly": "yarn test && yarn lint",
     "preversion": "yarn lint",
-    "test": "jest --config jestconfig.json",
+    "test": "jest --passWithNoTests --config jestconfig.json",
     "version": "yarn format && git add -A src"
   },
   "types": "lib/src/index.d.ts",
-  "version": "0.0.0"
+  "version": "0.0.1"
 }
