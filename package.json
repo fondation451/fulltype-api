@@ -29,7 +29,7 @@
     "starter"
   ],
   "license": "MIT",
-  "main": "lib/src/index.js",
+  "main": "lib/index.js",
   "name": "fulltype-api",
   "repository": {
     "type": "git",
@@ -47,6 +47,6 @@
     "test": "jest --passWithNoTests --config jestconfig.json",
     "version": "yarn format && git add -A src"
   },
-  "types": "lib/src/index.d.ts",
+  "types": "lib/index.d.ts",
   "version": "0.0.5"
 }
