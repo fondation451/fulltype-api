@@ -5,6 +5,8 @@ export type ApiEndpoint = {
   output: ft.Schema<{ [param: string]: ft.Schema<any> }>;
 };
 
-export const buildApiSchema = <ApiT extends { [routeName: string]: ApiEndpoint }>(
-  apiSchema: ApiT,
-): ApiT => apiSchema;
+export type ApiSchema = { [routeName: string]: ApiEndpoint };
+
+export const buildApiSchema = <ApiSchemaT extends ApiSchema>(
+  apiSchema: ApiSchemaT,
+): ApiSchemaT => apiSchema;
