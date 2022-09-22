@@ -1,11 +1,5 @@
-import * as ft from "fulltype";
+import type { ApiEndpoint, ApiSchema } from "./apiSchema";
+import { buildApiSchema } from "./apiSchema";
 
-export type ApiEndpoint = (
-  input: ft.Schema<{ [param: string]: ft.Schema<any> }>,
-) => ft.Schema<{ [param: string]: ft.Schema<any> }>;
-
-export type ApiSchema = { [routeName: string]: ApiEndpoint };
-
-export const buildApiSchema = <ApiSchemaT extends ApiSchema>(
-  apiSchema: ApiSchemaT,
-): ApiSchemaT => apiSchema;
+export type { ApiEndpoint, ApiSchema };
+export { buildApiSchema };
