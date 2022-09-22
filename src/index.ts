@@ -1,5 +1,5 @@
-import type { ApiEndpoint, ApiSchema } from "./apiSchema";
-import { buildApiSchema } from "./apiSchema";
+import type { ApiEndpoint, ApiSchema, Api } from "./buildApi";
+import { buildApi } from "./buildApi";
 
-export type { ApiEndpoint, ApiSchema };
-export { buildApiSchema };
+export type { ApiEndpoint, ApiSchema, Api };
+export { buildApi };

@@ -9,7 +9,7 @@ export type ApiSchema = { [routeName: string]: ApiEndpoint };
 
 export type Api<ApiSchemaT extends ApiSchema> = { baseUrl: string; schema: ApiSchemaT };
 
-export const buildApiSchema = <ApiSchemaT extends ApiSchema>({
+export const buildApi = <ApiSchemaT extends ApiSchema>({
   baseUrl,
   schema,
 }: {
